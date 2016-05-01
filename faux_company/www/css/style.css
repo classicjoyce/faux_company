@@ -1,0 +1,168 @@
+@font-face {
+  font-family: RecordaScript;
+  src: url(../fonts/RecordaScript.ttf); }
+
+@font-face {
+  font-family: DonutsAreForever;
+  src: url(../fonts/DonutsAreForever.otf); }
+
+* {
+  font-family: sans-serif;
+  color: #232323; }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400; }
+
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+body, p {
+  margin: 0; }
+
+header {
+  background: url(../img/banner-raccoon.jpg) no-repeat;
+  height: 500px;
+  background-position: 50% 60%;
+  position: relative; }
+  header .titles {
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.28), transparent);
+    bottom: 0px;
+    padding-top: 50px;
+    text-align: center; }
+    header .titles h1 {
+      font-size: 70px;
+      font-family: "DonutsAreForever";
+      padding: 0 16px; }
+    header .titles h2 {
+      font-size: 20px;
+      padding: 0 16px 24px; }
+
+nav {
+  text-align: center; }
+  nav ul {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  nav li {
+    flex-grow: 2;
+    padding: 8px 0; }
+    nav li a {
+      width: 100%;
+      border: solid 1px #e4e4e4;
+      padding: 8px 16px;
+      color: #333;
+      text-decoration: none; }
+
+.about {
+  width: 900px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4; }
+  .about h2 {
+    padding: 16px;
+    text-align: center; }
+  .about p {
+    line-height: 1.4;
+    padding: 0 16px 24px; }
+
+.services {
+  -webkit-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0px;
+  column-gap: 0px;
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid;
+  max-width: 900px;
+  margin: 0 auto; }
+  .services .service {
+    background-position: 50% 50%;
+    margin-bottom: 0px;
+    height: 300px;
+    position: relative; }
+    .services .service .service-text {
+      transition: all .3s ease;
+      width: calc(100% - 16px);
+      position: absolute;
+      bottom: 0px;
+      padding-top: 8px;
+      background: linear-gradient(to top, white, rgba(255, 255, 255, 0.6));
+      padding-left: 16px; }
+    .services .service h2 {
+      padding-bottom: 4px; }
+    .services .service h3 {
+      color: #505050;
+      display: block;
+      font-size: 14px;
+      font-weight: 500; }
+    .services .service p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #505050;
+      transition: all .3s ease;
+      line-height: 0;
+      height: 0px;
+      opacity: 0;
+      display: inline-block; }
+    .services .service:hover .service-text {
+      background: linear-gradient(to top, white, rgba(255, 255, 255, 0.6)); }
+    .services .service:hover h2 {
+      padding-top: 16px; }
+    .services .service:hover p {
+      margin-top: 8px;
+      line-height: 1.2;
+      opacity: 1;
+      padding-bottom: 230px; }
+
+.employees {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 24px; }
+  .employees h2 {
+    text-align: center; }
+  .employees .employee {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: calc(25% - 4px);
+    height: 194px;
+    margin-bottom: 8px; }
+    .employees .employee h3 {
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      width: 100%; }
+    .employees .employee img {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150px;
+      height: 150px;
+      margin-top: -75px;
+      margin-left: -75px;
+      border-radius: 50%; }
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  text-align: center; }
+  footer .trademark {
+    padding: 24px 0;
+    max-width: 600px;
+    margin: 0 auto; }
+  footer img {
+    display: inline-block; }
+  footer p {
+    width: calc(100% - 55px);
+    display: inline-block;
+    font-size: 11px; }
